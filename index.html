@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    meta name="description" content="Welcome to Mark-Et-Blog. Post your insight and read the latest posts."
+    <title>Mark-Et-Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="'stylesheet" href="blog.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-content">
+                <h1>Mark-Et-Blog</h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+                <div class="theme-toggle">
+                    <label for="theme-switch">Light Mode</label>
+                    <input type="checkbox" id="theme-switch">
+                    <label for="theme-switch">Dark Mode</label>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="latest-posts">
+            <h2>Latest Posts</h2>
+            <div id="posts-container"></div>
+        </section>
+
+        <section class="submit-form">
+            <h2>Submit</h2>
+             <form id="post-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <div id="username-error" class="error-message"></div>
+
+                <label for="blog-title">Blog Title:</label>
+                <input type="text" id="blog-title" name="blog-title" required>
+                <div id="title-error" class="error-message"></div>
+
+                <label for="blog-content">Blog Content:</label>
+                <textarea id="blog-content" id="blog-content" rows="5" required></textarea>
+                <div id="content-error" class="error-message"></div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Blog. All rights reserved.</p>
+        <p>Check out my GitHub: <a href="https://github.com/awb2987" target="_blank" id="github-link">GitHub Profile</a></p>
+    </footer>
+
+    <script src="blog.js"></script>
+    <script src="form.js"></script> 
+    <script src="logic.js"></script>
+</body>
+</html>

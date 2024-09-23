@@ -1,0 +1,76 @@
+/* Color variables for both light and dark themes */
+:root {
+    /* Light theme colors */
+    --background-light: #ffffff;
+    --text-light: #000000;
+    --navbar-link-light: #333333;
+    --footer-background-light: #f0f0f0;
+    --form-background-light: #f9f9f9;
+    --form-border-light: #ccc;
+    --form-shadow-light: rgba(0, 0, 0, 0.1);
+    --input-border-light: #ddd;
+    --submit-button-background-light: #0b79f0;
+    --submit-button-hover-light: #023469;
+    --error-message-light: #d70808;
+
+    /* Dark theme colors */
+    --background-dark: #333333;
+    --text-dark: #ffffff;
+    --navbar-link-dark: #cccccc;
+    --footer-background-dark: #444444;
+    --form-background-dark: #2c2c2c;
+    --form-border-dark: #444;
+    --form-shadow-dark: rgba(255, 255, 255, 0.1);
+    --input-border-dark: #666;
+    --submit-button-background-dark: #1a5fb2;
+    --submit-button-hover-dark: #004a9d;
+    --error-message-dark: #ff4d4d;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Light theme (default theme) */
+body.light-theme {
+    background-color: var(--background-light);
+    color: var(--text-light);
+}
+
+/* Dark theme */
+body.dark-theme {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+}
+
+/* Navbar styles */
+.navbar a {
+    color: var(--navbar-link-light);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Adjust navbar color based on the active theme */
+body.dark-theme .navbar a {
+    color: var(--navbar-link-dark);
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styles */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--footer-background-light);
+}
+
+/* Adujust footer color based on the active theme */
+body.dark-theme .footer {
+    background-color: var(--footer-background-dark);
+}

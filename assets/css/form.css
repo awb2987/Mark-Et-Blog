@@ -1,0 +1,86 @@
+/* From container */
+#post-form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid var(--form-border-light);
+    border-radius: 8px;
+    background-color: var(--form-background-light);
+    box-shadow: 0 2px 4px var(--form-shadow-light);
+}
+
+/* Adjust for dark theme */
+body.dark-theme #post-form {
+    border: 1px solid var(--form-border-dark);
+    background-color: var(--form-backgound-dark);
+    box-shadow: var(--form-shadow-dark);
+}
+
+/* Form labels */
+#post-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Form inputs and textArea */
+#post-form input[type="text"],
+#post-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--input-border-light);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Adjust for dark theme */
+body.dark-theme #post-form input[type="text"],
+body.dark-theme #post-form textarea {
+    border: 1px solid var(--input-border-dark);
+}
+
+/* Form textArea specifics */
+#post-form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+/* Submit button */
+#post-form button[type="submit"] {
+    background-color: var(--submit-button-background-light);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Adjust for dark theme */
+body.dark-theme #post-form button[type="submit"] {
+    background-color: var(--submit-button-background-dark);
+}
+
+#post-form button[type="submit"]:hover {
+    background-color: #023469;
+}
+
+/* Adjust for dark theme */
+body.dark-theme #post-form button[type="submit"]:hover {
+    background-color: var(--submit-button-hover-dark)
+}
+
+/* Error message */
+.error-message {
+    color: var(--error-message-light);
+    font-size: 16px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+/* Adjust for dark theme */
+body.dark-theme .error-message {
+    color: var(--error-message-dark);
+}
