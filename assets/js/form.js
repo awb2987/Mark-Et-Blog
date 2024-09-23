@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // RETRIEVE & trim input values from form
         const username = document.getElementById('username').value.trim();
-        const blogTitle = document.getElementById('blog-title').value.tim();
+        const blogTitle = document.getElementById('blog-title').value.trim();
         const blogContent = document.getElementById('blog-content').value.trim();
 
         let hasError = false; // FLAG to track if validation errors occur
