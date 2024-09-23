@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         themeSwitch.checked = theme === 'dark-theme';
     }
 
-    // RETRIEVE saved theme from local storage, default to 'light-mode' if none currently exist
+    // RETRIEVE saved theme from local storage, default to 'light-theme' if none currently exist
     const savedTheme = localStorage.getItem('theme') || 'light-theme';
     // APPLY saved theme when page loads
     applyTheme(savedTheme);

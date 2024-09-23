@@ -1,3 +1,23 @@
+/* Light Theme Variables */
+:root {
+    --post-border: #ccc;
+    --post-background: #fff;
+    --post-shadow: rgba(0, 0, 0, 0.1);
+    --post-title-color: #333;
+    --post-author-color: #555;
+    --post-content-color: #666;
+}
+
+/* Dark Theme Variables */
+body.dark-theme {
+    --post-border: #444;
+    --post-background: #222;
+    --post-shadow: rgba(255, 255, 255, 0.1);
+    --post-title-color: #fff;
+    --post-author-color: #aaa;
+    --post-content-color: #ddd;
+}
+
 /* Container for each individual blog post */
 .post {
     max-width: 800px;
@@ -14,7 +34,6 @@
     font-size: 16px;
     margin: 0 0 10px 0;
     color: var(--post-title-color);
-    margin: 0 0 10px 0;
 }
 
 /* Post author */

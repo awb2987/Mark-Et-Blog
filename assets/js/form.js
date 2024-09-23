@@ -56,23 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // SAVE updated posts array back to local storage
         localStorage.setItem('posts', JSON.stringify(posts));
 
-        // CREATE new article element to display new post
-        const postElement = document.createElement('article');
-        postElement.className = 'post'; // ASSIGN class name
-        postElement.innerHTML = `
-            <h3>${blogTitle}</h3>
-            <p><strong>${username}</strong></p>
-            <p>${blogContent}</p>
-            <hr>
-        `;
-
-        // PREPEND new post element to posts container
-        postsContainer.prepend(postElement);
-
-        // RESET form fields for new input
-        postForm.reset();
-
-        // REDIRECT to index page
-        window.location.href = 'index.html';
+        // REDIRECT to blog page to view posts
+        window.location.href = 'blog.html';
     });
 });
