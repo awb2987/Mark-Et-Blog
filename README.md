@@ -1,4 +1,14 @@
-# Blog Project
+# Mark-Et-Blog
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Files and Structure](#files-and-structure)
+- [Setup](#setup)
+- [Usage](#usage)
+- [Screenshots](#screenshots)
+- [Links](#links)
+- [Acknowledgements](#acknowledgements)
 
 ## Overview
 
@@ -30,3 +40,28 @@ This project is a simple blog application that allows users to submit blog posts
    ```sh
    git clone <repository-url>
    cd <repository-directory>
+   ```
+
+2. **Open in Browser**
+
+   Open `index.html` in your browser to view the application.
+
+## Usage
+
+- Submit a new blog post using the form on the landing page.
+- Switch between light and dark themes using the theme toggle.
+
+## Screenshots
+
+![Screenshot of Blog Submission Form](./assets/images/Index-screenshot.png)
+![Screenshot of Blog Posts](./assets/images/Blog-screenshot.png)
+
+*Screenshots showcasing the application in action.*
+
+## Links
+
+- [GitHub Repository](https://github.com/awb2987/Mark-Et-Blog)
+
+## Acknowledgements
+
+Thank you to all the resources and documentation that helped in the development of this project.
