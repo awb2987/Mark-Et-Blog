@@ -53,8 +53,10 @@ This project is a simple blog application that allows users to submit blog posts
 
 ## Screenshots
 
-![Screenshot of Blog Submission Form](./assets/images/Index-screenshot.png)
-![Screenshot of Blog Posts](./assets/images/Blog-screenshot.png)
+![Screenshot of Landing Blog Submission Page Light Mode](./assets/images/Landing%20page%20light%20mode.png)
+![Screenshot of Landing Blog Submission Page Dark Mode](./assets/images/Landing%20page%20dark%20mode.png)
+![Screenshot of Blog Posts Light Mode](./assets/images/Blog%20page%20light%20mode.png)
+![Screenshot of Blog Posts Dark Mode](./assets/images/Blog%20page%20dark%20mode.png)
 
 *Screenshots showcasing the application in action.*
 

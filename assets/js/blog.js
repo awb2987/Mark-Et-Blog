@@ -3,11 +3,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // GET the container element where posts will be displayed
     const postsContainer = document.getElementById('posts-container');
 
-    // Function to load posts from local storage
+    // FUNCTION to load posts from local storage
     function loadPosts() {
         // RETRIEVE posts from local storage and parse them. DEFAULT empty array if none exist
         const posts = JSON.parse(localStorage.getItem('posts')) || [];
-
         // CLEAR posts container before adding new posts
         postsContainer.innerHTML = '';
 
@@ -17,11 +16,10 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        // Iterate through each post & create article element for display purposes
+        // ITERATE through each post & create article element for display purposes
         posts.forEach(post => {
             const postElement = document.createElement('article');
-            postElement.className = 'post'; // ASSIGN class name
-            
+            postElement.className = 'post';
             // SET inner HTML of post element, display title, username & content
             postElement.innerHTML = `
                 <h3>${post.title}</h3>

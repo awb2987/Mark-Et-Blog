@@ -3,6 +3,7 @@
     /* Light theme colors */
     --background-light: #ffffff;
     --text-light: #000000;
+    --navbar-background-light: #f9f9f9;
     --navbar-link-light: #333333;
     --footer-background-light: #f0f0f0;
     --form-background-light: #f9f9f9;
@@ -16,6 +17,7 @@
     /* Dark theme colors */
     --background-dark: #333333;
     --text-dark: #ffffff;
+    --navbar-background-dark: #444444;
     --navbar-link-dark: #cccccc;
     --footer-background-dark: #444444;
     --form-background-dark: #2c2c2c;
@@ -48,6 +50,10 @@ body.dark-theme {
 }
 
 /* Navbar styles */
+.navbar {
+    background-color: var(--navbar-background-light);
+}
+
 .navbar a {
     color: var(--navbar-link-light);
     text-decoration: none;
@@ -55,6 +61,10 @@ body.dark-theme {
 }
 
 /* Adjust navbar color based on the active theme */
+body.dark-theme .navbar {
+    background-color: var(--navbar-background-dark);
+}
+
 body.dark-theme .navbar a {
     color: var(--navbar-link-dark);
 }
@@ -70,7 +80,13 @@ body.dark-theme .navbar a {
     background-color: var(--footer-background-light);
 }
 
-/* Adujust footer color based on the active theme */
+/* Adjust footer color based on the active theme */
 body.dark-theme .footer {
     background-color: var(--footer-background-dark);
+}
+
+/* General styles for all themes */
+body.light-theme .navbar,
+body.dark-theme .navbar {
+    background-color: transparent;
 }

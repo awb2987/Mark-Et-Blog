@@ -1,59 +1,118 @@
-/* Light Theme Variables */
+/* Color variables for both light and dark themes */
 :root {
-    --post-border: #ccc;
-    --post-background: #fff;
-    --post-shadow: rgba(0, 0, 0, 0.1);
-    --post-title-color: #333;
-    --post-author-color: #555;
-    --post-content-color: #666;
+    /* Light theme colors */
+    --background-light: #ffffff;
+    --text-light: #000000;
+    --navbar-background-light: #f9f9f9;
+    --navbar-link-light: #333333;
+    --footer-background-light: #f0f0f0;
+    --form-background-light: #f9f9f9;
+    --form-border-light: #ccc;
+    --form-shadow-light: rgba(0, 0, 0, 0.1);
+    --input-border-light: #ddd;
+    --submit-button-background-light: #0b79f0;
+    --submit-button-hover-light: #023469;
+    --error-message-light: #d70808;
+
+    /* Dark theme colors */
+    --background-dark: #333333;
+    --text-dark: #ffffff;
+    --navbar-background-dark: #444444;
+    --navbar-link-dark: #cccccc;
+    --footer-background-dark: #444444;
+    --form-background-dark: #2c2c2c;
+    --form-border-dark: #444;
+    --form-shadow-dark: rgba(255, 255, 255, 0.1);
+    --input-border-dark: #666;
+    --submit-button-background-dark: #1a5fb2;
+    --submit-button-hover-dark: #004a9d;
+    --error-message-dark: #ff4d4d;
 }
 
-/* Dark Theme Variables */
+/* Body styles */
+body {
+    font-family: Arial, 'Times New Roman', Times;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Light theme (default theme) */
+body.light-theme {
+    background-color: var(--background-light);
+    color: var(--text-light);
+}
+
+/* Dark theme */
 body.dark-theme {
-    --post-border: #444;
-    --post-background: #222;
-    --post-shadow: rgba(255, 255, 255, 0.1);
-    --post-title-color: #fff;
-    --post-author-color: #aaa;
-    --post-content-color: #ddd;
+    background-color: var(--background-dark);
+    color: var(--text-dark);
 }
 
-/* Container for each individual blog post */
-.post {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid var(--post-border);
+/* Navbar styles */
+.navbar {
+    background-color: var(--navbar-background-light);
+}
+
+.navbar a {
+    color: var(--navbar-link-light);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Adjust navbar color based on active theme */
+body.dark-theme .navbar {
+    background-color: var(--navbar-background-dark);
+}
+
+body.dark-theme .navbar a {
+    color: var(--navbar-link-dark);
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Blog post styles */
+.blog-post {
+    border: 1px solid var(--form-border-light);
     border-radius: 8px;
-    background-color: var(--post-background);
-    box-shadow: 0 2px 4px var(--post-shadow);
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: var(--form-shadow-light);
+    transition: transform 0.2s;
 }
 
-/* Post title */
-.post h3 {
-    font-size: 16px;
-    margin: 0 0 10px 0;
-    color: var(--post-title-color);
+.blog-post:hover {
+    transform: scale(1.02);
 }
 
-/* Post author */
-.post p strong {
-    font-size: 16px;
-    color: var(--post-author-color);
-    margin: 0 0 10px 0;
+/* Header styles */
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
 }
 
-/* Post content */
-.post p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: var(--post-content-color);
-    margin: 0 0 10px 0;
+h3 {
+    font-size: 1.5em;
+    color: var(--navbar-link-light);
 }
 
-/* Post divider */
-.post hr {
-    border: 0;
-    border-top: 1px solid var(--post-border);
-    margin: 20px 0;
+/* Footer styles */
+footer {
+    padding: 15px;
+    background-color: var(--footer-background-light);
+    color: var(--text-light);
+}
+
+/* Error message styles */
+.error-message {
+    color: var(--error-message-light);
+    font-weight: bold;
+}
+
+/* General styles for all themes */
+body.light-theme .navbar,
+body.dark-theme .navbar {
+    background-color: transparent;
 }

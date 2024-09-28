@@ -1,4 +1,24 @@
-/* From container */
+/* Light Theme Variables */
+:root {
+    --form-border-light: #ccc;
+    --form-background-light: #fff;
+    --form-shadow-light: rgba(0, 0, 0, 0.1);
+    --input-border-light: #aaa;
+    --submit-button-background-light: #007bff;
+    --submit-button-hover-light: #0056b3;
+    --error-message-light: #ff0000;
+
+    /* Dark Theme Variables */
+    --form-border-dark: #444;
+    --form-background-dark: #222;
+    --form-shadow-dark: rgba(255, 255, 255, 0.1);
+    --input-border-dark: #666;
+    --submit-button-background-dark: #0056b3;
+    --submit-button-hover-dark: #004494;
+    --error-message-dark: #ffaaaa;
+}
+
+/* Form container */
 #post-form {
     max-width: 500px;
     margin: 20px auto;
@@ -12,7 +32,7 @@
 /* Adjust for dark theme */
 body.dark-theme #post-form {
     border: 1px solid var(--form-border-dark);
-    background-color: var(--form-backgound-dark);
+    background-color: var(--form-background-dark);
     box-shadow: var(--form-shadow-dark);
 }
 
@@ -23,7 +43,7 @@ body.dark-theme #post-form {
     font-weight: bold;
 }
 
-/* Form inputs and textArea */
+/* Form inputs and textarea */
 #post-form input[type="text"],
 #post-form textarea {
     width: 100%;
@@ -32,6 +52,7 @@ body.dark-theme #post-form {
     border: 1px solid var(--input-border-light);
     border-radius: 5px;
     box-sizing: border-box;
+    transition: border-color 0.3s ease;
 }
 
 /* Adjust for dark theme */
@@ -40,7 +61,7 @@ body.dark-theme #post-form textarea {
     border: 1px solid var(--input-border-dark);
 }
 
-/* Form textArea specifics */
+/* Form textarea specifics */
 #post-form textarea {
     resize: vertical;
     height: 150px;
@@ -55,7 +76,7 @@ body.dark-theme #post-form textarea {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s;
 }
 
 /* Adjust for dark theme */
@@ -63,13 +84,15 @@ body.dark-theme #post-form button[type="submit"] {
     background-color: var(--submit-button-background-dark);
 }
 
+/* Button hover effects */
 #post-form button[type="submit"]:hover {
-    background-color: #023469;
+    background-color: var(--submit-button-hover-light);
+    transform: scale(1.05);
 }
 
 /* Adjust for dark theme */
 body.dark-theme #post-form button[type="submit"]:hover {
-    background-color: var(--submit-button-hover-dark)
+    background-color: var(--submit-button-hover-dark);
 }
 
 /* Error message */
