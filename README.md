@@ -1,5 +1,9 @@
 # Mark-Et-Blog
 
+## Description
+
+Mark-Et-Blog is a simple blog application that enables users to submit blog posts, view them on a separate page, and toggle between light and dark themes. It utilizes the Local Storage API to store posts, ensuring that data persists even after the page is refreshed.
+
 ## Table of Contents
 
 - [Overview](#overview)
@@ -63,6 +67,7 @@ This project is a simple blog application that allows users to submit blog posts
 ## Links
 
 - [GitHub Repository](https://github.com/awb2987/Mark-Et-Blog)
+- [Deployed Application](https://awb2987.github.io/Mark-Et-Blog/)
 
 ## Acknowledgements
 
